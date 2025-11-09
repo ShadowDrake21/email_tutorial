@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>SpaceX Website Landing Page</title>
+  </head>
+  <body>
+    <header>
+      <a href="/" class="logo"
+        ><img src="./images/spaceX-logo.png" alt="Logo"
+      /></a>
+      <ul class="nav">
+        <li>
+          <a href="#"><ion-icon name="planet-outline"></ion-icon></a>
+        </li>
+        <li><a href="#">Falcon 9</a></li>
+        <li><a href="#">falcon heavy</a></li>
+        <li><a href="#">dragon</a></li>
+        <li><a href="#">starship</a></li>
+        <li><a href="#">starlink</a></li>
+      </ul>
+      <a href="#" class="login"
+        ><ion-icon name="log-in-outline"></ion-icon>Sign in</a
+      >
+    </header>
+    <div class="banner">
+      <div class="tilt">
+        <div class="content">
+          <h1>Space Mission</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. At nihil,
+            iste alias fugit maxime facilis aliquid porro id culpa quos. Porro
+            rerum eaque corporis ex quisquam autem aliquid commodi. Illo quasi
+            voluptas, obcaecati quia amet cumque laudantium maxime minus
+            facilis?
+          </p>
+          <a href="#" onclick="toggleViewer()"> Launch Now </a>
+        </div>
+      </div>
+      <div class="viewer active"></div>
+      <ul class="sci">
+        <li><ion-icon name="logo-facebook"></ion-icon></li>
+        <li><ion-icon name="logo-twitter"></ion-icon></li>
+        <li><ion-icon name="logo-instagram"></ion-icon></li>
+      </ul>
+      <div class="credits">Designed by &copy; Dmytro Krapyviansyi</div>
+      <a href="#" class="arrow" onclick="toggleItem()">
+        <img src="./images/arrow-left-double-line.png" alt="arrow" />
+      </a>
+      <div class="item">
+        <iframe
+          width="1200"
+          height="720"
+          src="https://www.youtube.com/embed/5ixbPMe6684"
+          title="Hughes JUPITER 3 Mission"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+        <div class="description">
+          <h4>Latest News | SpaceX | Hughes JUPITER 3 Mission</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni nihil
+            eius quasi voluptate eligendi, voluptates labore reiciendis
+            recusandae dolores aut tempora aliquam mollitia quo ipsam placeat
+            deleniti cumque voluptatibus consequuntur ad repellat, assumenda
+            inventore fugiat. Laborum, rerum illo illum quasi accusamus ullam
+            laudantium odio reprehenderit hic dolore eius debitis eligendi?
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="./js/scripts.js"></script>
+  </body>
+</html>
