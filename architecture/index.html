@@ -5,6 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>FORMA STUDIO</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
@@ -13,6 +23,9 @@
       <div class="container">
         <div class="header__top">
           <nav class="menu">
+            <button class="menu__btn">
+              <span></span>
+            </button>
             <ul class="menu__list">
               <li class="menu__item">
                 <a href="#" class="menu__link">ABOUT STUDIO</a>
@@ -31,8 +44,9 @@
           <a href="#" class="logo">
             <img src="images/logo.svg" alt="logo" />
           </a>
-          <a href="tel:+380682554585" class="header__phone"
-            >+38 (068) 255 45 85</a
+          <a href="tel:+380682554585" class="header__phone">
+            <img src="images/phone.svg" alt="" />
+            <span> +38 (068) 255 45 85</span></a
           >
         </div>
         <h1 class="header__title">Architecture that shapes space</h1>
@@ -43,6 +57,137 @@
         <a href="#" class="header__btn">Submit a request</a>
       </div>
     </header>
+    <section class="services section-box">
+      <div class="container">
+        <h2 class="services__title section__title">Our Services</h2>
+        <ul class="services__list">
+          <li class="services__item">
+            <p class="services__item-title">Architectural Design</p>
+            <p class="services__item-text">
+              We will design your home personally for you, combining ergonomics
+              and beauty, guided by a designer’s vision of space.
+            </p>
+          </li>
+          <li class="services__item">
+            <p class="services__item-title">Interior Design</p>
+            <p class="services__item-text">
+              We will design your home personally for you, combining ergonomics
+              and beauty, guided by a designer’s vision of space
+            </p>
+          </li>
+          <li class="services__item">
+            <p class="services__item-title">Architectural supervision</p>
+            <p class="services__item-text">
+              We oversee the implementation of our projects from concept to
+              realization
+            </p>
+          </li>
+          <li class="services__item">
+            <p class="services__item-title">Turnkey Projects</p>
+            <p class="services__item-text">
+              We handle everything from concept development to project
+              completion, so you don’t have to worry about a thing.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="projects section-box">
+      <div class="container">
+        <h2 class="projects__title section__title">Our Projects</h2>
+        <div class="project__slider swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="project__item">
+                <img src="images/projects/1.jpg" alt="" />
+                <h3 class="project__item-title">Apartment 55.6 m²</h3>
+                <p class="project__item-desct">For a young couple of lawyers</p>
+                <p class="project__item-text">
+                  The main idea of this interior is to create a bright, light,
+                  and cozy space. Warm colors and soft lines are used throughout
+                  the design to evoke a sense of calm and harmony.
+                </p>
+                <a href="#" class="project__item-link">more</a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="project__item">
+                <img src="images/projects/2.jpg" alt="" />
+                <h3 class="project__item-title">The house</h3>
+                <p class="project__item-desct">For a family of doctors</p>
+                <p class="project__item-text">
+                  A comfortable space for the homeowners is ensured through
+                  proper organization and planning of the house. The open
+                  terrace seamlessly connects the pool, kitchen, and living
+                  areas.
+                </p>
+                <a href="#" class="project__item-link">more</a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="project__item">
+                <img src="images/projects/3.jpg" alt="" />
+                <h3 class="project__item-title">Country House</h3>
+                <p class="project__item-desct">For a family of entrepreneurs</p>
+                <p class="project__item-text">
+                  During the project development, a layout was created featuring
+                  an open kitchen-living area with a centrally placed fireplace
+                  that serves as a spatial divider.
+                </p>
+                <a href="#" class="project__item-link">more</a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="project__item">
+                <img src="images/projects/1.jpg" alt="" />
+                <h3 class="project__item-title">Apartment 55.6 m²</h3>
+                <p class="project__item-desct">For a young couple of lawyers</p>
+                <p class="project__item-text">
+                  The main idea of this interior is to create a bright, light,
+                  and cozy space. Warm colors and soft lines are used throughout
+                  the design to evoke a sense of calm and harmony.
+                </p>
+                <a href="#" class="project__item-link">more</a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="project__item">
+                <img src="images/projects/2.jpg" alt="" />
+                <h3 class="project__item-title">The house</h3>
+                <p class="project__item-desct">For a family of doctors</p>
+                <p class="project__item-text">
+                  A comfortable space for the homeowners is ensured through
+                  proper organization and planning of the house. The open
+                  terrace seamlessly connects the pool, kitchen, and living
+                  areas.
+                </p>
+                <a href="#" class="project__item-link">more</a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="project__item">
+                <img src="images/projects/3.jpg" alt="" />
+                <h3 class="project__item-title">Country House</h3>
+                <p class="project__item-desct">For a family of entrepreneurs</p>
+                <p class="project__item-text">
+                  During the project development, a layout was created featuring
+                  an open kitchen-living area with a centrally placed fireplace
+                  that serves as a spatial divider.
+                </p>
+                <a href="#" class="project__item-link">more</a>
+              </div>
+            </div>
+          </div>
+          <div class="project__arrow project__arrow-prev">
+            <img src="images/arrow-left.svg" alt="" />
+          </div>
+          <div class="project__arrow project__arrow-next">
+            <img src="images/arrow-right.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
