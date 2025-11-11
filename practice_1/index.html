@@ -26,6 +26,19 @@
         text-decoration: none;
         color: inherit;
       }
+      p {
+        font-weight: 400;
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        margin: 0;
+        padding: 0;
+        color: #000;
+      }
       .wrapper {
         width: 100%;
         table-layout: fixed;
@@ -58,6 +71,39 @@
         inset: 0;
         background: rgba(0, 0, 0, 0.3);
         z-index: -1;
+      }
+      .services-three-columns {
+        text-align: center;
+        font-size: 0;
+        vertical-align: top;
+      }
+      .services-three-columns .column {
+        display: inline-block;
+        width: 100%;
+        max-width: 170px;
+        padding-top: 20px;
+        background-color: rgba(0, 0, 0, 0.03);
+      }
+      .services-three-columns .column:nth-child(2) {
+        background-color: rgba(0, 0, 0, 0.08);
+      }
+
+      .services-three-columns .column td {
+        padding: 10px 10px 0;
+      }
+
+      .services-three-columns .column h5 {
+        font-size: 16px;
+        font-weight: 600;
+        margin-bottom: 16px;
+      }
+
+      .services-three-columns .column p {
+        font-size: 15px;
+        line-height: 1.8;
+        font-weight: 400;
+        color: rgba(0, 0, 0, 0.4);
+        margin-top: 0;
       }
     </style>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -130,6 +176,7 @@
                       font-size: 30px;
                       margin-bottom: 0;
                       padding-bottom: 30px;
+                      color: #fff;
                     "
                   >
                     We Create Modern Website
@@ -149,6 +196,80 @@
                     mouth.
                   </p>
                   <img src="images/002-play-button.png" alt="" width="60" />
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #ffffff; padding: 2.5em">
+            <table width="100%">
+              <tr>
+                <td style="text-align: center">
+                  <h2
+                    style="
+                      font-size: 20px;
+                      line-height: 1.4;
+                      font-weight: 700;
+                      text-transform: uppercase;
+                      margin-top: 0;
+                      color: #000;
+                      margin-bottom: 17px;
+                    "
+                  >
+                    Our services
+                  </h2>
+                  <p
+                    style="
+                      line-height: 1.8;
+                      font-size: 15px;
+                      color: rgba(0, 0, 0, 0.4);
+                      max-width: 465px;
+                      margin: 0 auto 15px;
+                    "
+                  >
+                    A small river named Duden flows by their place and supplies
+                    it with the necessary regelialia.
+                  </p>
+                  <table>
+                    <tr>
+                      <td class="services-three-columns">
+                        <table class="column">
+                          <tr>
+                            <td>
+                              <h5>Branding</h5>
+                              <p>
+                                Far far away, behind the word mountains, far
+                                from the countries
+                              </p>
+                            </td>
+                          </tr>
+                        </table>
+                        <table class="column">
+                          <tr>
+                            <td>
+                              <h5>Design</h5>
+                              <p>
+                                Far far away, behind the word mountains, far
+                                from the countries
+                              </p>
+                            </td>
+                          </tr>
+                        </table>
+                        <table class="column">
+                          <tr>
+                            <td>
+                              <h5>Development</h5>
+                              <p>
+                                Far far away, behind the word mountains, far
+                                from the countries
+                              </p>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
                 </td>
               </tr>
             </table>
