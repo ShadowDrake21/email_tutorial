@@ -76,6 +76,36 @@
         display: inline-block;
         margin: 0 5px;
       }
+
+      @media (max-width: 600px) {
+        .updated td {
+          display: block;
+          text-align: center !important;
+        }
+
+        .updated td:first-child {
+          padding-bottom: 20px !important;
+        }
+      }
+
+      @media (max-width: 500px) {
+        .products {
+          padding-top: 20px;
+          background-color: #fafafa;
+        }
+        .products td {
+          display: block;
+          width: 100% !important;
+          padding: 0 0 20px !important;
+          text-align: center !important;
+        }
+
+        .products td h3,
+        .products td p {
+          text-align: center !important;
+          padding: 0 20px;
+        }
+      }
     </style>
   </head>
   <body>
@@ -136,7 +166,7 @@
           </td>
         </tr>
         <tr>
-          <td>
+          <td class="products">
             <table width="100%">
               <tr>
                 <td style="background-color: #fafafa">
@@ -466,7 +496,7 @@
           </td>
         </tr>
         <tr>
-          <td style="padding: 20px 70px">
+          <td style="padding: 20px 70px" class="updated">
             <table width="100%">
               <tr>
                 <td>
