@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping cart</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        margin: 0;
+        background-color: #f1f1f1;
+        font-family: 'Work Sans', sans-serif;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 1.8;
+        color: rgba(0, 0, 0, 0.4);
+      }
+      table {
+        border-spacing: 0;
+      }
+      td {
+        padding: 0;
+      }
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        margin: 0;
+        padding: 0;
+        color: #000;
+        font-weight: 400;
+      }
+      ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+      }
+      .wrapper {
+        width: 100%;
+        table-layout: fixed;
+        background-color: #f1f1f1;
+        padding-bottom: 60px;
+      }
+      .main {
+        max-width: 600px;
+        width: 100%;
+        background-color: #fff;
+        margin: 0 auto;
+      }
+    </style>
+  </head>
+  <body>
+    <center class="wrapper">
+      <table class="main" width="100%">
+        <tr>
+          <td style="padding: 2em">
+            <a
+              href="#"
+              style="color: #17bebb; font-size: 24px; font-weight: 700"
+              >Shop</a
+            >
+          </td>
+        </tr>
+        <tr>
+          <td style="padding: 2em 2.5em">
+            <table width="100%">
+              <tr>
+                <td>
+                  <h1
+                    style="
+                      color: #000;
+                      font-size: 34px;
+                      margin-bottom: 15px;
+                      font-weight: 300;
+                      line-height: 1.2;
+                    "
+                  >
+                    Ronald your shopping cart misses you
+                  </h1>
+                  <h2 style="font-size: 24px; font-weight: 200">
+                    Amazing deals, updates, interesting news right in your inbox
+                  </h2>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding: 2.5em">
+            <table width="100%">
+              <tr style="border-bottom: 1px solid rgba(0, 0, 0, 0.05)">
+                <th width="80%" style="text-align: start; color: #000">Item</th>
+                <th width="20%" style="text-align: end; color: #000">Price</th>
+              </tr>
+              <tr>
+                <td
+                  width="80%"
+                  style="
+                    padding-top: 20px;
+                    padding-right: 2.5em;
+                    text-align: left;
+                  "
+                >
+                  <table width="100%">
+                    <tr>
+                      <td style="vertical-align: top">
+                        <img src="images/prod-1.jpg" alt="" width="100" />
+                      </td>
+                      <td style="padding-left: 20px; width: calc(100% - 125px)">
+                        <h4 style="font-size: 1.17em">Analog Wrest Watch</h4>
+                        <span>Small</span>
+                        <p style="margin-top: 0">
+                          A small river named Duden flows by their place and
+                          supplies it with the necessary regelialia.
+                        </p>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+                <td
+                  width="20%"
+                  style="
+                    padding-top: 20px;
+                    padding-left: 2.5em;
+                    text-align: left;
+                  "
+                >
+                  <p style="color: #000; font-size: 20px">$120</p>
+                </td>
+              </tr>
+              <tr style="border-bottom: 1px solid rgba(0, 0, 0, 0.05)">
+                <td
+                  width="80%"
+                  style="
+                    padding-top: 20px;
+                    padding-right: 2.5em;
+                    text-align: left;
+                  "
+                >
+                  <table width="100%">
+                    <tr>
+                      <td style="vertical-align: top">
+                        <img src="images/prod-2.jpg" alt="" width="100" />
+                      </td>
+                      <td style="padding-left: 20px; width: calc(100% - 125px)">
+                        <h4 style="font-size: 1.17em">Analog Wrest Watch</h4>
+                        <span>Small</span>
+                        <p style="margin-top: 0">
+                          A small river named Duden flows by their place and
+                          supplies it with the necessary regelialia.
+                        </p>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+                <td
+                  width="20%"
+                  style="
+                    padding-top: 20px;
+                    padding-left: 2.5em;
+                    text-align: left;
+                  "
+                >
+                  <p style="color: #000; font-size: 20px">$120</p>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding: 0 2.5em 2.5em">
+            <a
+              href="#"
+              style="
+                display: inline-block;
+                border-radius: 5px;
+                background-color: #17bebb;
+                color: #fff;
+                padding: 10px 15px;
+              "
+            >
+              Continue your order
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td
+            style="
+              border-top: 1px solid rgba(0, 0, 0, 0.05);
+              padding: 2.5em;
+              background-color: #f7fafa;
+              color: rgba(0, 0, 0, 0.5);
+            "
+          >
+            <table width="100%">
+              <tr>
+                <td
+                  width="33.3%"
+                  style="
+                    padding-top: 20px;
+                    padding-right: 10px;
+                    vertical-align: top;
+                  "
+                >
+                  <h4 style="color: #000; font-size: 20px; margin-bottom: 20px">
+                    About
+                  </h4>
+                  <p>
+                    A small river named Duden flows by their place and supplies
+                    it with the necessary regelialia.
+                  </p>
+                </td>
+                <td
+                  width="33.3%"
+                  style="
+                    padding-top: 20px;
+                    padding-left: 5px;
+                    padding-right: 5px;
+                    vertical-align: top;
+                  "
+                >
+                  <h4 style="color: #000; font-size: 20px; margin-bottom: 20px">
+                    Contact Info
+                  </h4>
+                  <p>
+                    203 Fake St. Mountain View, San Francisco, California, USA
+                  </p>
+                  <p>+2 392 3929 210</p>
+                </td>
+                <td
+                  width="33.3%"
+                  style="
+                    padding-top: 20px;
+                    padding-left: 10px;
+                    vertical-align: top;
+                  "
+                >
+                  <h4 style="color: #000; font-size: 20px; margin-bottom: 20px">
+                    Useful Links
+                  </h4>
+                  <ul>
+                    <li style="margin-bottom: 10px">
+                      <a href="#" style="color: #000">Home</a>
+                    </li>
+                    <li style="margin-bottom: 10px">
+                      <a href="#" style="color: #000">Account</a>
+                    </li>
+                    <li style="margin-bottom: 10px">
+                      <a href="#" style="color: #000">Wishlist</a>
+                    </li>
+                    <li style="margin-bottom: 10px">
+                      <a href="#" style="color: #000">Order</a>
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p style="text-align: center">
+              No longer want to receive these email? You can
+              <a href="#" style="color: rgba(0, 0, 0, 0.8)">Unsubscribe here</a>
+            </p>
+          </td>
+        </tr>
+      </table>
+    </center>
+  </body>
+</html>
