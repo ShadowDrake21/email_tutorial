@@ -52,13 +52,62 @@
         background-color: #000000;
         opacity: 0.3;
       }
+
+      @media (max-width: 500px) {
+        .header-top td {
+          display: block;
+          width: 100% !important;
+          text-align: center;
+        }
+        .navigation td {
+          display: inline;
+          width: 100% !important;
+          padding: 10px !important;
+        }
+        .before-traveling td {
+          display: block;
+          width: 100% !important;
+          text-align: center;
+          padding: 0 !important;
+        }
+        .before-traveling td img {
+          margin-bottom: 10px;
+        }
+        .best-destination td {
+          display: block;
+          width: 100% !important;
+          padding: 0 !important;
+          text-align: center;
+        }
+        .happy-tourist td {
+          display: block;
+          width: 100% !important;
+          text-align: center;
+          padding: 0 !important;
+        }
+        .blog-items td {
+          display: block;
+          width: 100% !important;
+          padding: 0 !important;
+          text-align: center;
+        }
+        .blog-items td a {
+          margin-bottom: 20px;
+        }
+        .footer td {
+          display: block;
+          width: 100% !important;
+          text-align: center !important;
+          padding: 5px 0 !important;
+        }
+      }
     </style>
   </head>
   <body>
     <center class="wrapper">
       <table class="main" width="100%">
         <tr>
-          <td style="padding: 1.5em 2.5em">
+          <td class="header-top" style="padding: 1.5em 2.5em">
             <table width="100%">
               <tr>
                 <td
@@ -72,7 +121,7 @@
                 >
                   <a href="#">travel</a>
                 </td>
-                <td width="50%">
+                <td width="50%" class="navigation">
                   <table width="100%">
                     <tr>
                       <td
@@ -229,7 +278,7 @@
                 </td>
               </tr>
               <tr>
-                <td>
+                <td class="best-destination">
                   <table width="100%">
                     <tr>
                       <td style="padding-top: 20px">
@@ -659,7 +708,7 @@
                 </td>
               </tr>
               <tr>
-                <td>
+                <td class="blog-items">
                   <table width="100%">
                     <tr>
                       <td width="50%" style="padding-right: 10px">
@@ -832,7 +881,7 @@
                 </td>
               </tr>
               <tr>
-                <td>
+                <td class="happy-tourist">
                   <table widht="100%">
                     <tr>
                       <td>
@@ -929,7 +978,7 @@
           </td>
         </tr>
         <tr>
-          <td style="padding: 2.5em">
+          <td class="before-traveling" style="padding: 2.5em">
             <table width="100%">
               <tr>
                 <td width="50%">
@@ -1023,6 +1072,92 @@
                             </td>
                           </tr>
                         </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #000" class="footer">
+            <table width="100%">
+              <tr>
+                <td style="padding: 2.5em">
+                  <table width="100%">
+                    <tr>
+                      <td width="60%" style="vertical-align: top">
+                        <table width="100%">
+                          <tr>
+                            <td
+                              style="
+                                font-size: 20px;
+                                color: #fff;
+                                font-weight: 700;
+                                padding-bottom: 20px;
+                              "
+                            >
+                              <span>About</span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td style="color: rgba(255, 255, 255, 0.5)">
+                              <span
+                                >A small river named Duden flows by their place
+                                and supplies it with the necessary regelialia.
+                              </span>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                      <td width="40%" style="vertical-align: top">
+                        <table width="100%">
+                          <tr>
+                            <td
+                              style="
+                                font-size: 20px;
+                                color: #fff;
+                                font-weight: 700;
+                                padding-bottom: 20px;
+                              "
+                            >
+                              <span>Contact Info</span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td style="color: rgba(255, 255, 255, 0.5)">
+                              <span
+                                >203 Fake St. Mountain View, San Francisco,
+                                California, USA
+                              </span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td style="color: rgba(255, 255, 255, 0.5)">
+                              <span>+2 392 3929 210</span>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding: 2.5em">
+                  <table width="100%" style="padding: 15px 0">
+                    <tr>
+                      <td style="color: rgba(255, 255, 255, 0.5)">
+                        <span>© 2018 Travel. All Rights Reserved</span>
+                      </td>
+                      <td
+                        style="
+                          color: rgba(255, 255, 255, 0.5);
+                          text-align: right;
+                        "
+                      >
+                        <a href="#">Unsubscribe</a>
                       </td>
                     </tr>
                   </table>
