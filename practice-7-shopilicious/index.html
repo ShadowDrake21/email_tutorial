@@ -44,13 +44,82 @@
         color: inherit;
         display: inline-block;
       }
+
+      @media (max-width: 650px) {
+        .header td {
+          display: block;
+          width: 100% !important;
+        }
+        .header-img {
+          height: 100% !important;
+          width: 100% !important;
+          display: block;
+        }
+        .header-content td {
+          height: auto !important;
+          text-align: center !important;
+        }
+        .header-content a {
+          text-align: center;
+        }
+        .header-btn table {
+          margin: 0 auto !important;
+        }
+        .popular-products td {
+          display: block;
+          width: 100% !important;
+          text-align: center !important;
+        }
+        .popular-products td a {
+          margin: 0 auto !important;
+        }
+        .popular-products td table {
+          margin: 0 auto !important;
+          padding-bottom: 10px;
+        }
+      }
+
+      @media (max-width: 500px) {
+        .promotion td {
+          display: block;
+          width: 100% !important;
+          text-align: center !important;
+          box-sizing: border-box;
+        }
+        .promotion td img {
+          display: none !important;
+        }
+        .trending-products td {
+          display: block;
+          width: 100% !important;
+          text-align: center !important;
+          padding-right: 0 !important;
+          padding-left: 0 !important;
+        }
+        .trending-products table {
+          margin: 0 auto !important;
+          padding-bottom: 10px;
+        }
+      }
+
+      @media (max-width: 400px) {
+        .header-top .free {
+          display: none !important;
+        }
+        .header-top td {
+          text-align: center;
+        }
+      }
     </style>
   </head>
   <body>
     <center class="wrapper">
       <table class="main" width="100%">
         <tr>
-          <td style="padding: 30px 0 30px 30px; position: relative">
+          <td
+            class="header-top"
+            style="padding: 30px 0 30px 30px; position: relative"
+          >
             <table width="100%">
               <tr>
                 <td>
@@ -63,6 +132,7 @@
                               <img src="images/logo.png" alt="" />
                             </td>
                             <td
+                              class="free"
                               style="position: absolute; right: -1px; top: 30px"
                             >
                               <img src="images/free.png" alt="" />
@@ -78,18 +148,23 @@
           </td>
         </tr>
         <tr>
-          <td>
+          <td class="header">
             <table width="100%">
               <tr>
                 <td width="50%">
                   <img
+                    class="header-img"
                     src="images/header-img.jpg"
                     alt=""
                     height="400"
                     width="325"
                   />
                 </td>
-                <td width="50%" style="vertical-align: top">
+                <td
+                  class="header-content"
+                  width="50%"
+                  style="vertical-align: top"
+                >
                   <table width="100%">
                     <tr>
                       <td
@@ -150,11 +225,12 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td class="header-btn">
                               <table width="140">
                                 <tr>
                                   <td
                                     style="
+                                      box-sizing: border-box;
                                       color: #4e54cb;
                                       font-family: 'Raleway', Arial, sans-serif;
                                       font-size: 14px;
@@ -200,7 +276,7 @@
                 </td>
               </tr>
               <tr>
-                <td>
+                <td class="popular-products">
                   <table width="100%">
                     <tr>
                       <td width="33.33%" style="padding-right: 5px">
@@ -502,10 +578,11 @@
           </td>
         </tr>
         <tr>
-          <td>
+          <td class="promotion">
             <table width="100%">
               <tr>
                 <td
+                  class="promotion-content"
                   width="430"
                   style="
                     max-width: 100%;
@@ -605,7 +682,7 @@
           </td>
         </tr>
         <tr>
-          <td style="padding: 50px 30px">
+          <td class="trending-products" style="padding: 50px 30px">
             <table width="100%">
               <tr>
                 <td
