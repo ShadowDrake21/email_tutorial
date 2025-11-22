@@ -38,6 +38,34 @@
         border-spacing: 0;
         background-color: #1d1d1d;
       }
+      @media (max-width: 650px) {
+        .faves td,
+        .product td {
+          width: 100% !important;
+          display: block !important;
+          text-align: center !important;
+          padding: 0 !important;
+        }
+        .text-separator img {
+          display: none !important;
+        }
+        .product-btn table {
+          width: 100% !important;
+        }
+        .header-part,
+        .footer-part {
+          display: block !important;
+          width: 100% !important;
+          text-align: center !important;
+          padding-bottom: 30px !important;
+        }
+        .header-part table {
+          width: 100% !important;
+        }
+        .header-part table td {
+          width: 15px !important;
+        }
+      }
     </style>
   </head>
   <body>
@@ -47,8 +75,10 @@
           <td style="padding: 30px 0">
             <table width="100%">
               <tr>
-                <td><img src="images/logo.jpg" alt="172" width="" /></td>
-                <td>
+                <td class="header-part">
+                  <img src="images/logo.jpg" alt="172" width="" />
+                </td>
+                <td class="header-part">
                   <table width="195" align="right">
                     <tr>
                       <td>
@@ -184,7 +214,7 @@
           </td>
         </tr>
         <tr>
-          <td style="padding: 60px 0">
+          <td class="faves" style="padding: 60px 0">
             <table width="100%">
               <tr align="center">
                 <td
@@ -285,7 +315,7 @@
                                   </td>
                                 </tr>
                                 <tr>
-                                  <td>
+                                  <td class="fave-btn">
                                     <table width="140" align="center">
                                       <tr>
                                         <td
@@ -383,7 +413,7 @@
                                   </td>
                                 </tr>
                                 <tr>
-                                  <td>
+                                  <td class="fave-btn">
                                     <table width="140" align="center">
                                       <tr>
                                         <td
@@ -481,7 +511,7 @@
                                   </td>
                                 </tr>
                                 <tr>
-                                  <td>
+                                  <td class="fave-btn">
                                     <table width="140" align="center">
                                       <tr>
                                         <td
@@ -516,7 +546,7 @@
           </td>
         </tr>
         <tr>
-          <td>
+          <td class="product">
             <table width="100%">
               <tr>
                 <td style="padding: 50px 0">
@@ -569,6 +599,7 @@
                                     <table width="100%">
                                       <tr>
                                         <td
+                                          class="text-separator"
                                           width="1"
                                           style="
                                             font-size: 0pt;
@@ -644,7 +675,7 @@
                                 </tr>
 
                                 <tr>
-                                  <td>
+                                  <td class="product-btn">
                                     <table width="140" align="left">
                                       <tr>
                                         <td
@@ -718,6 +749,7 @@
                                     <table width="100%">
                                       <tr>
                                         <td
+                                          class="text-separator"
                                           width="1"
                                           style="
                                             font-size: 0pt;
@@ -791,7 +823,7 @@
                                 </tr>
 
                                 <tr>
-                                  <td>
+                                  <td class="product-btn">
                                     <table width="140" align="left">
                                       <tr>
                                         <td
@@ -834,7 +866,7 @@
           </td>
         </tr>
         <tr>
-          <td>
+          <td class="product">
             <table width="100%">
               <tr>
                 <td
@@ -936,10 +968,10 @@
           <td style="padding: 50px 0">
             <table width="100%">
               <tr>
-                <td>
+                <td class="footer-part">
                   <img src="images/footer-logo.jpg" width="172" alt="" />
                 </td>
-                <td>
+                <td class="footer-part">
                   <table width="100%">
                     <tr>
                       <td>
