@@ -241,3 +241,9 @@ body {
 .transaction:hover .transaction__btn {
   transform: translate(-50%, -50%);
 }
+
+.balance-number--special {
+  color: red;
+  font-size: 50px;
+  font-weight: 800;
+}
